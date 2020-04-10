@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="apple-touch-icon" href="./assets/animal-sound-logo.png" />
+    
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+
+    <title>Animal Sounds</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="content-container">
+        <div class="arrow" onclick="leftClicked()">
+          <image alt="left arrow image" src="./assets/left-arrow.png"></image>
+        </div>
+        <div>
+          <p id="animal-name"></p>
+          <image
+            id="main-animal"
+            alt="animal image"
+            src="./assets/elephant.jpg"
+          ></image>
+        </div>
+        <div class="arrow" onclick="rightClicked()">
+          <image alt="right arrow image" src="./assets/right-arrow.png"></image>
+        </div>
+      </div>
+      <div class="action-button-container">
+        <img
+          onclick="playSound()"
+          id="play-button"
+          src="./assets/play-button.png"
+          alt="play and pause button"
+        />
+        <img
+          onclick="pauseSound()"
+          id="pause-button"
+          src="./assets/pause-button.svg"
+          alt="play and pause button"
+        />
+      </div>
+    </div>
+    <audio
+      id="audio-element"
+      src="./assets/audios/elephant.mp3"
+      type="audio/mp3"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
