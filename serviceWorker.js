@@ -1,4 +1,4 @@
-const staticAnimalSounds = "animal-sounds"
+const staticAnimalSounds = "animal-sounds";
 const assets = [
   "/",
   "/index.html",
@@ -29,8 +29,7 @@ const assets = [
   "/assets/audios/goat.mp3",
   "/assets/audios/lion.mp3",
   "/assets/audios/parrot.mp3"
-
-]
+];
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
